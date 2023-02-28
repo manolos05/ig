@@ -1,0 +1,33 @@
+
+
+/* NavBar */
+
+.navbar {
+    padding: 2rem;
+    background-color: rgb(238, 238, 238);
+    
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* feed  */
+
+#cont-fd {
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+    padding: 20px;
+    
+}
+
+
+
+
+#ftg {
+    width: 20px;
+}

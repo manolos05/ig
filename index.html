@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feed IG con Bootstrap</title>
+    <!--Hojas de stilo-->
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <!--Barra de Navegacion-->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/instagram.svg" width="40" alt="logo"> Instagram
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" data-bs-target="#first_modal" data-bs-toggle="modal">
+                <button class="btn btn-success">Create a new post</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="Dropdown">
+                  <i class="bi bi-gear-fill"></i>
+                </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privace and data</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                  </ul>
+              </div>
+            </li>
+         </ul>
+        </div>
+      </div>
+    </nav>
+     
+    <!--Modal-->
+    <div class="modal" tabindex="-1" id="first_modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <h5 for="exampleFormControlTextarea1" class="form-label">Caption:</h5>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"  placeholder="Add the caption of your post here"></textarea>
+              
+              <i class="bi bi-camera-fill" id="ic-mo"></i>
+              <i class="bi bi-geo-alt-fill" id="ic-mo"></i>
+              
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!--feed square IG-->
+
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+          <img src="imagenes/grid-3x3.svg" width="20" alt="logo">
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+          <img src="imagenes/square-fill.svg" width="20" alt="logo">
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <!--Foto Grid-->       
+        <div class="mt-5">
+          <div>
+            <div class="d-line d-flex flex-row m-1 p-1">
+              <div class="row justify-content-center">
+                <div class="col">
+                  <img src="imagenes/2foto.png" width="100%" >
+                </div>
+                <div class="col">
+                  <img src="imagenes/3foto.png" width="100%">
+                </div>
+                <div class="col">
+                  <img src="imagenes/4foto.png" width="100%">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <div class="d-line d-flex flex-row m-1 p-1" >
+              <div class="row justify-content-center">
+                <div class="col m-1 p-1">
+                  <img src="imagenes/5foto.png" width="100%">
+                </div>
+                <div class="col m-1 p-1">
+                  <img src="imagenes/proyecto6.png" width="100%">
+                </div>
+                <div class="col m-1 p-1">
+                  <img src="imagenes/sound-wave-technology-background-display-600w-547256365.webp" width="100%">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <div class="d-line d-flex flex-row m-1 p-1">
+              <div class="row justify-content-center">
+                <div class="col">
+                  <img src="imagenes/background-thanksgiving-day-1280x720-600w-314742737.webp" width="100%">
+                </div>
+                <div class="col">
+                  <img src="imagenes/ultra-3d-high-definition-tv-600w-2194947403.webp" width="100%" height="80%" >
+                </div>
+                <div class="col">
+                  <img src="imagenes/consistent-illustration-resolution-gradation-cinema-600w-1996635341.webp" width="100%" height="80%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="d-flex  flex-column justify-content-center" id="cont-fd">
+          <!--1-->       
+          <div class="card" style="width:30%;">
+            <div class="card-title p-1 mb-0 row">
+              <div class="col-8">
+                <h5>Mi set up de trabajo</h5>
+              </div>
+              <div class="col-4 d-flex flex-row-reverse">
+                <p >02/2023</p>
+              </div>
+            </div>
+            <img src="imagenes/2foto.png">
+            <div class="card-body p-1">
+              <strong> 244 likes</strong>
+                <p>Desde aca aprendo a programar diariamente</p>
+            </div>
+          </div>
+            <!--2-->
+            <div class="card mt-3" style="width:30%;">
+              <div class="card-title p-1 mb-0 row">
+                <div class="col-8">
+                  <h5>Aprendiendo del desarrollo web</h5>
+                </div>
+                <div class="col-4 d-flex flex-row-reverse">
+                  <p >01/2023</p>
+                </div>
+              </div>
+              <img src="imagenes/3foto.png">
+              <div class="card-body p-1">
+                <strong> 140 likes</strong>
+                  <p>Nuevos conocimientos adquiridos en este módulo</p>
+              </div>
+            </div>
+            <!--3-->
+            <div class="card mt-3" style="width:30%;">
+              <div class="card-title p-1 mb-0 row">
+                <div class="col-8">
+                  <h5>Bootstrap!!!</h5>
+                </div>
+                <div class="col-4 d-flex flex-row-reverse">
+                  <p >12/2022</p>
+                </div>
+              </div>
+              <img src="imagenes/4foto.png">
+              <div class="card-body p-1">
+                <strong> 100 likes</strong>
+                  <p>Diseñas páginas web es mas rápido con este framework</p>
+              </div>
+            </div>
+            <!--4-->
+            <div class="card mt-3" style="width:30%;">
+              <div class="card-title p-1 mb-0 row">
+                <div class="col-8">
+                  <h5>Mi pc</h5>
+                </div>
+                <div class="col-4 d-flex flex-row-reverse">
+                  <p >11/2022</p>
+                </div>
+              </div>
+              <img src="imagenes/5foto.png">
+              <div class="card-body p-1">
+                <strong>50 likes</strong>
+                  <p>¡Equipo nuevo!</p>
+              </div>
+            </div>
+            <!--5-->
+            <div class="card mt-3" style="width:30%;">
+              <div class="card-title p-1 mb-0 row">
+                <div class="col-8">
+                  <h5>Páginas web responsivas</h5>
+                </div>
+                <div class="col-4 d-flex flex-row-reverse">
+                  <p >11/2022</p>
+                </div>
+              </div>
+              <img src="imagenes/proyecto6.png">
+              <div class="card-body p-1">
+                <strong> 500 likes</strong>
+                  <p>Se adaptan a dispositovs de distintos tamaños</p>
+              </div>
+            </div>
+            <!--6-->
+            <div class="card mt-3" style="width:30%;">
+              <div class="card-title p-1 mb-0 row">
+                <div class="col-8">
+                  <h5>Ondas de multiples colores</h5>
+                </div>
+                <div class="col-4 d-flex flex-row-reverse">
+                  <p >10/2022</p>
+                </div>
+              </div>
+              <img src="imagenes/sound-wave-technology-background-display-600w-547256365.webp">
+              <div class="card-body p-1">
+                <strong> 20 likes</strong>
+                  <p>ondas de sonido en distintos colores</p>
+              </div>
+            </div>
+            <!--7-->
+            <div class="card mt-3" style="width:30%;">
+              <div class="card-title p-1 mb-0 row">
+                <div class="col-8">
+                  <h5>Sunflowers</h5>
+                </div>
+                <div class="col-4 d-flex flex-row-reverse">
+                  <p>10/2022</p>
+                </div>
+              </div>
+              <img src="imagenes/background-thanksgiving-day-1280x720-600w-314742737.webp">
+              <div class="card-body p-1">
+                <strong> 2 likes</strong>
+                  <p>Dibujo hecho por mi</p>
+              </div>
+            </div>
+            <!--8-->
+            <div class="card mt-3" style="width:30%;">
+              <div class="card-title p-1 mb-0 row">
+                <div class="col-8">
+                  <h5>FHD & 4K</h5>
+                </div>
+                <div class="col-4 d-flex flex-row-reverse">
+                  <p>09/2022</p>
+                </div>
+              </div>
+              <img src="imagenes/ultra-3d-high-definition-tv-600w-2194947403.webp">
+              <div class="card-body p-1">
+                <strong> 24 likes</strong>
+                  <p>El tamaño varia en distintos tipos de pantallas</p>
+              </div>
+            </div>
+            <!--9-->
+            <div class="card mt-3" style="width:30%;">
+              <div class="card-title p-1 mb-0 row">
+                <div class="col-8">
+                  <h5>Distintos tamaños de resolusión</h5>
+                </div>
+                <div class="col-4 d-flex flex-row-reverse">
+                  <p >08/2022</p>
+                </div>
+              </div>
+              <img src="imagenes/consistent-illustration-resolution-gradation-cinema-600w-1996635341.webp">
+              <div class="card-body p-1">
+                <strong> 1 like</strong>
+                  <p>width x heigth</p>
+              </div>
+            </div>       
+  
+        </div> 
+      </div>
+
+
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
